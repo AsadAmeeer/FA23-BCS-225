@@ -1,0 +1,31 @@
+name: meditrack_pro
+description: MediTrack Pro - patient manager for your friend.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  sqflite: ^2.2.8
+  path_provider: ^2.0.15
+  path: ^1.8.3
+  image_picker: ^0.8.7+6
+  # file_picker 5.x used older Android embedding. Upgrade to a newer release that
+  # supports v2 embedding to avoid build errors on recent Flutter versions.
+  file_picker: ^10.3.3
+  open_file: ^3.2.1
+  json_annotation: ^4.9.0
+
+flutter:
+  # Enable the Material Design icon font (required for `Icons.*` to display)
+  # See: https://flutter.dev/docs/development/ui/assets-and-images#update-your-pubspecyaml
+  uses-material-design: true
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
